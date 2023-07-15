@@ -6,7 +6,7 @@ class MovieDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Movie detail page"),
+      child: Text("Movie detail   "),
     );
   }
 }

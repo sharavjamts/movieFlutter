@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
   List<Widget> _totalPage = [MoviesPage(), WishListPage(), ProfilePage()];
 
@@ -24,7 +24,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _totalPage[_currentIndex],
+      backgroundColor: Color(0xff36393f),
+      body: SafeArea(child: _totalPage[_currentIndex]),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: _setCurrentIndex,
